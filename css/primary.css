@@ -1,0 +1,15 @@
+/* primary.css */
+/* Edited by Joseph Tajaran. I made this for my UX portfolio gotajaran.com Nice to meet you :) */
+/* February 7, 2019 */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+main p {
+	padding: 25%;
+	font-size: 50px;
+}
