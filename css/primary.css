@@ -1,15 +1,331 @@
-/* primary.css */
 /* Edited by Joseph Tajaran. I made this for my UX portfolio gotajaran.com Nice to meet you :) */
-/* February 7, 2019 */
+
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
 
-main p {
-	padding: 25%;
-	font-size: 50px;
+body {
+	font-family: 'Roboto', sans-serif;
 }
+
+	body h1 {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 900;
+	}
+
+	body h2 {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+	}
+
+	body h4 {
+		font-family: 'Source Code Pro', monospace;
+		font-weight: 300;
+	}
+
+	body p {
+		font-family: 'Roboto', sans-serif;	
+		font-weight: 700;
+		color: #888888;
+	}
+
+/* @320 */
+
+@media only screen and (min-width: 0px) {
+
+	/* GRID@320 */
+
+	main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+		"header"
+		"intro"
+		"dog"
+		"work"
+		"footer";
+	}
+
+		main h1 {
+			font-size: 36px;
+		}
+
+		main h2 {
+			font-size: 16px;
+		}
+
+		main p {
+			font-size: 18px;
+			line-height: 23px;
+		}
+	
+		.navbar, header, .intro, .work, .dog p {
+			padding: 0px 5vw;
+		}
+
+
+	/* HEADER@320 */
+
+	header {
+		grid-area: header;
+	}
+
+		.navbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 15vh;
+		}
+
+			.logo img {
+				height: 50px;
+				width: auto;
+			}
+		
+		header a:link, header a:visited, header a:hover, header a:active {
+			font-family: 'Source Code Pro', monospace;
+			font-size: 14px;
+			font-weight: 500;
+			color: #282828;
+			text-decoration: none;
+		  }
+
+
+	/* INTRO@320 */
+
+	.intro {
+		grid-area: intro;
+		height: 80vh;
+		text-align: center;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: stretch;
+
+	}
+
+		.intro h1 {
+			margin-top: 14.27px;
+		}
+
+
+		/* DOG@320 */
+
+		.dog {
+			grid-area: dog;
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: stretch;
+			padding-bottom: 40.42px;
+		}
+
+			.smalldog {
+				display: block;
+
+			} 
+	
+			.bigdog {
+				width: 100%;
+				height: 100%;
+				margin-bottom: 20.21px;
+			}
+	
+
+	/* WORK@320 */
+
+	.work {
+		grid-area: work;
+	}
+
+		.work img {
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+		}
+
+		.work_small {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+			.work_small img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+				margin-bottom: 40.42px;
+			}
+
+		.work_wide {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+		}
+
+			.work_wide img {
+				display: none;
+				width: 100%;
+				height: auto;
+				margin-bottom: 40.42px;
+			}
+
+	/* FOOTER@320 */
+
+	footer {
+		grid-area: footer;
+		width: 100%;
+		background-color: #282828;
+	}
+	
+		footer img {
+			padding: 20.21px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+}
+
+/* @620 */
+
+@media only screen and (min-width: 620px) {
+
+	/* GRID@620 */
+
+		main h1 {
+			font-size: 72px;
+		}
+
+		main h2 {
+			font-size: 24px;
+		}
+
+		main p {
+			font-size: 27px;
+			line-height: 32px;
+		}
+
+	/* DOG@620 */
+
+		.dog {
+			padding-bottom: 80.42px;
+		}
+
+	/* WORK@620 */
+
+			.work_small img {
+				display: none;
+			}
+
+			.work_wide img {
+				display: block;
+			}
+}
+
+/* @768 */
+
+@media only screen and (min-width: 768px) {
+
+	/* GRID@768 */
+
+		.navbar, header, .intro, .work, .dog p {
+			padding: 0px 4.167vw;
+		}
+	
+	/* HEADER@768 */
+
+		header a:link, header a:visited, header a:hover, header a:active {
+			font-size: 18px;
+		  }
+}
+
+/* @1280 */
+
+@media only screen and (min-width: 1280px) {
+
+	/* GRID@1280 */
+
+		main h1 {
+			font-size: 108px;
+		}
+
+		main p {
+			font-size: 36px;
+			line-height: 41px;
+		}
+
+		.navbar, header, .intro, .work, .dog p {
+			padding: 0px 11.250vw;
+		}
+
+	/* INTRO@1280 */
+
+		.intro {
+			height: 70vh;
+		}
+		
+	/* DOG@1280 */
+
+		.dog {
+			padding-bottom: 134.69px;
+		}
+
+			.bigdog {
+				height: auto;
+				width: 100%;
+				margin-bottom: 134.69px;
+			}
+
+	/* WORK@1280 */
+
+			.work_wide img {
+				display: block;
+				margin-bottom: 65.21px;
+			}
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+	/* GRID@1440 */
+
+		.navbar, header, .intro, .work, .dog p {
+			padding: 0px 15.625vw;
+		}
+	
+	/* HEADER@1440 */
+
+	.navbar {
+		height: 10vh;
+	}	
+	
+}
+
+@media only screen and (min-width: 1920px) {
+
+	/* GRID@1920 */
+
+		.navbar, header, .intro, .work, .dog p {
+			padding: 0px 23.958vw;
+		}
+
+	/* INTRO@1280 */
+
+		.intro {
+			height: 50vh;
+		}
+	
+	/* DOG@1280 */
+
+			.bigdog {
+				height: auto;
+				padding: 0px 23.958vw;
+				margin-bottom: 134.69px;
+			}
+}
+
+
