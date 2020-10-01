@@ -2,82 +2,187 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Tajaran - Product Designer</title>
+	<title>Joseph Tajaran - Product Designer</title>
 	<meta name="author" content="Joseph Tajaran">
 	
 	<!-- Favicon: Remember to do multiple sizes later -->
-    <link rel="icon" href="favicon.png">
+	<link rel="icon" href="favicon_32.png">
 	
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/primary.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	
-	<!-- Type -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900|Source+Code+Pro:300,400,500,600&display=swap" rel="stylesheet"> 
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/8d182f4632.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<main>
-
-		<!-- NAV BAR -->
+	<div class="joseph">
+		<!-- BACK TO THE TOP ID -------------------->
+		<a id="top"></a>
+		
+		<!-- NAV BAR -------------------->
 		<header>
-			<a id="top"></a>
-			<nav class="navbar">
-				<a href="index.html" class="logo">
-				  <img src="images/logos/dark_bg_logo.svg" alt="My logo :)">
-				</a>
-				<a href="index.html" class="menu">Work</a>
-			</nav>
-		</header>
+			<div class="nav-bar">
+				<nav>
+					<!-- Website Logo -->
+					<a href="index.html" class="logo"><img src="images/logos/logo-long.svg" id="large-logo" alt="My logo :)"><img src="images/logos/logo-head.svg" id="small-logo" alt="My logo :)">
+					</a>
+					<!-- Navigation Menu -->
+					<ul class="header-menu">
+						<li><a href="/">Work</a></li>
+						<li><a href="/">About</a></li>
+						<li><a href="/">LinkedIn&nbsp;<i class="fas fa-external-link-alt"></i></a></li>
+					</ul>			
+				</nav>
+			</div>	
+		</header>		
 
-		<!-- INTRO W/ NAME -->
-		<section class="intro">
-			<h2>Designer + HCI Grad</h2>
-			<h1>Joseph Tajaran</h1>
-		</section>
 
-		<!-- ME & PENNY -->
-		<section class="dog">
-			<img src="images/dog.jpg" alt="Me and the love of my life" class="bigdog">
-			<p>HCI Grad in June 2020. As a Designer, I bring my empathy and management skills from my mental health career. Check out my work!</p>
-		</section>
+		<!-- START MAIN GRID WRAPPER -------------------->
+		<main>
+			<div class="wrapper">
+				
+				<br>
+				
+				<!-- INTRO -------------------->
+				<section class="content-parent">
+					<div class="content-child">
+						<div class="content" id="center-align">
+							<h4>Hello :)</h4>
+							<h1>From Crisis Line to Product Design</h1>
+							<p id="intro-p">I’m an empath who looks at the big picture.<br>Learn more <a href="/">about me</a> or check out my work&nbsp;<i class="fas fa-level-down-alt"></i></p>
+						</div>
+					</div>
+				</section>		
+				
+				<!-- START CASE STUDIES -------------------->
+				<section class="three-col-parent">
+					<div class="three-col-child" id="three-col-padding">
+					<!-- Suicide is Different -->
+					<a href="/" class="three-col-item">
+							<div class="three-col-image" id="sid-bg">
+								<img src="images/assets/SID-Thumb.png" alt="Case Study">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h4>UX/UI</h4>
+								<h3>Suicide is Different</h3>
+								<p>Redesigning for an expedient task flow and brand guide. This is some information.</p>
+							</div>
+					</a>
+						
 
-		<!-- CASE STUDIES -->
-		<section class="work">
-			<div class="work_small">
-				<a href="green.html" class="gs_case_small">
-					<img src="images/assets/gs_case.svg" alt="Green Shirt Case Study">
-				</a>
-				<a href="crowd.html" class="cc_case_small">
-					<img src="images/assets/cc_case.svg" alt="Crowd Capital Case Study">
-				</a>
-				<a href="sdt.html" class="std_case_small">
-					<img src="images/assets/sdt_case.svg" alt="Strata Decision Technology Case Study">
-				</a>
+					<!-- Green Shirt Studio -->
+					<a href="/" class="three-col-item">
+							<div class="three-col-image" id="gss-bg">
+								<img src="images/assets/GSS-Thumb.png" alt="Case Study">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h4>UX/UI</h4>
+								<h3>Green Shirt Studio</h3>
+								<p>Redesigning for an expedient task flow and brand guide. This is some information.</p>
+							</div>
+					</a>
+
+					<!-- Crowd Capital -->
+					<a href="/" class="three-col-item">
+							<div class="three-col-image" id="cc-bg">
+								<img src="images/assets/CC-Thumb.png" alt="Case Study">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h4>UX/UI</h4>
+								<h3>Crowd Capital</h3>
+								<p>Redesigning for an expedient task flow and brand guide. This is some information.</p>
+							</div>
+					</a>
+
+					<!-- Strata Decision Technology -->
+					<a href="/" class="three-col-item">
+							<div class="three-col-image" id="sdt-bg">
+								<img src="images/assets/SDT-Thumb.png" alt="Case Study">
+							</div>
+							<div class="three-col-content" id="center-align">
+								<h4>User Experience</h4>
+								<h3>Strata Decision Technology</h3>
+								<p>Redesigning for an expedient task flow and brand guide. This is some information.</p>
+							</div>
+					</a>
+
+					<!-- IDES -->
+					<a href="/" class="three-col-item">
+						<div class="three-col-image" id="ides-bg">
+							<img src="images/assets/IDES-Thumb.png" alt="Case Study">
+						</div>
+						<div class="three-col-content" id="center-align">
+							<h4>Research/UX</h4>
+							<h3>IDES (School Project)</h3>
+							<p>Redesigning for an expedient task flow and brand guide. This is some information.</p>
+						</div>
+					</a>
+
+					<!-- Blank Case Study -->
+					<a href="/" class="three-col-item">
+						<div class="three-col-image" id="no-bg">
+						</div>
+						<div class="three-col-content" id="center-align">
+						</div>					
+					</a>
+				<!-- END CASE STUDIES -------------------->
+					</div>
+				</section>
+				<!-- END MAIN GRID WRAPPER -------------------->
+				</div>
+		</main>
+
+		<!-- FOOTER -------------------->
+		<footer>
+			<div class="footer-container">
+				<div class="footer-content">
+					<!-- Website Logo -->
+					<div class="footer-info">
+						<a href="index.html" class="logo"><img src="images/logos/logo-long.svg" alt="My logo :)"></a>
+						<p>Thanks for checking out my work! Designed and coded by me.</p>
+					</div>
+						<!-- Navigation Menu -->
+					<div class="bottom-nav-container">
+						<div class="footer-menu">
+							<h5>Work</h5>
+							<ul>
+								<li><a href="/">Suicide is Different</a></li>
+								<li><a href="/">Green Shirt Studio</a></li>
+								<li><a href="/">Crowd Capital</a></li>
+								<li><a href="/">IDES (School Project)</a></li>
+								<li><a href="/">Strata Decision</a></li>
+							</ul>
+						</div>
+						<div class="footer-menu">
+							<h5>More</h5>
+							<ul>
+								<li><a href="/">About Me</a></li>
+								<li><a href="/">LinkedIn&nbsp;<i class="fas fa-external-link-alt"></i></a></li>	
+							</ul>
+						</div>
+						<div class="footer-menu">
+							<h5>Contact Me</h5>
+							<ul>
+								<li><a href="&#109;a&#105;l&#116;&#111;:&#106;&#111;&#115;&#101;&#112;&#104;&#64;&#116;&#97;&#106;&#97;&#114;&#97;&#110;&#46;&#99;&#111;&#109;">joseph@tajaran.com</a></li>
+								<li><a href="tel:312-278-7960">312-278-7960</a></li>							
+							</ul>
+						</div>					
+					</div>
+				</div>
 			</div>
-			<div class="work_wide">
-				<a href="green.html" class="gs_case_wide">
-					<img src="images/assets/gs_case_wide.svg" alt="Green Shirt Case Study">
-				</a>
-				<a href="crowd.html" class="cc_case_wide">
-					<img src="images/assets/cc_case_wide.svg" alt="Crowd Capital Case Study">
-				</a>
-				<a href="sdt-protected.html" class="std_case_wide">
-					<img src="images/assets/sdt_case_wide.svg" alt="Strata Decision Technology Case Study">
-				</a>
+			<div class="curve-container">
+				<a href="#top">
+					<div class="curve-parent">
+						<img src="images/assets/curve-triangle.svg" alt="Click back to top">
+						<div class="centered">Back to Top</div>
+					</div>	
+				</a>				
 			</div>
-		</section>
-	</main>
-
-	<!-- FOOTER -->
-	<footer>
-		<a href="#top" class="arrow">
-			<img src="images/assets/arrow.png">
-		</a>
-	</footer>
+		</footer> 
+	</div>
 </body>	
 </html>
