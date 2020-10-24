@@ -93,7 +93,8 @@ figcaption {
 	color: rgb(0, 0, 0, 0.6);
 }
 
-h4 {
+h4,
+h4 i{
 	color: #0290EE;
 	letter-spacing: 0.05em;
 }
@@ -144,7 +145,8 @@ i,
 }
 
 /* Strong formatting */
-strong {
+strong,
+strong > a {
 	font-weight: bold;
 }
 
@@ -159,7 +161,8 @@ p > a,
 .footer-menu li:hover a,
 .footer-menu li:hover a i,
 .go-back:hover a,
-.go-back:hover a i {
+.go-back:hover a i,
+.content p a {
 	color: #0290EE;
 }
 
@@ -171,7 +174,8 @@ p > a,
 	color: #FFFFFF;
 }
 
-p > a:hover {
+p > a:hover,
+.content p a:hover {
 	text-decoration: underline;
 }
 
@@ -226,7 +230,8 @@ footer ul a {
 #cc-bg img,
 #cc-bg-2 img,
 #sdt-bg img,
-#ides-bg img {
+#ides-bg img,
+#ides-bg-2 img{
 	width: 100%;
 	border-radius: 4px;	
 	box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.4);
@@ -246,17 +251,15 @@ footer ul a {
 	background-color: #3A8149; 
 }
 
-#gss-bg-2 {
+#gss-bg-2,
+#cc-bg-2,
+#ides-bg-2 {
 	background-color: #EFEFEF; 
 }
 
 /* Crowd Capital - Bg Color */
 #cc-bg {
 	background-color: #7AB648; 
-}
-
-#cc-bg-2 {
-	background-color: #EFEFEF; 
 }
 
 /* Strata Decision Technology - Bg Color */
