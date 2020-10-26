@@ -58,9 +58,9 @@ figcaption {
 			 url(Inter-Bold.otf);
 }
 
+
 p, 
-a,
-strong {
+a {
 	font-family: Inter, arial, sans-serif;
 	line-height: 1.5;
 	font-weight: normal;
@@ -128,9 +128,9 @@ footer a,
 .backwards {
 	font-size: 16px;
 }
-
-h5, 
+ 
 i,
+h5,
 .three-col-image p,
 .three-col-image p i {
 	font-size: 14px;
@@ -307,7 +307,9 @@ footer ul a {
 .three-col-child div.three-col-item:nth-child(3),
 .three-col-child div.three-col-item:nth-child(4),
 .two-col-child .two-col-item:nth-child(1),
-.two-col-child .two-col-item:nth-child(2) {
+.two-col-child .two-col-item:nth-child(2),
+.two-col-child .two-col-item:nth-child(3),
+.two-col-child .two-col-item:nth-child(4) {
 	padding-bottom: 32px;
 }
 
@@ -345,7 +347,7 @@ footer ul a {
 
 /* 4th Lvl 2-col Wrapper ----------*/
 .two-col-item h3 {
-	padding-top: 16px;
+	padding-top: 8px;
 	padding-bottom:8px;
 }
 
@@ -433,21 +435,34 @@ main {
 
 /* 3rd Level Wrapper - Large Image ----------*/
 .content-img-container {	
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
 	margin-bottom: 64px;
+}
+
+.content-img-container img {	
+	width: 100%;
+	height: auto;
 }
 
 .content-img {	
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	margin-bottom: 16px;
 }
 
 .content-img img {	
 	width: 100%;
 	height: auto;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.content-img-container figcaption {
+	margin-top: 16px;
 }
 
 /* No resized Image in the content container */
@@ -929,7 +944,7 @@ footer h5 {
 	
 	/* Adding radius and box shadow */
 	#bg-div .content-img {
-		padding: 40px;
+		padding: 48px;
 	}
 
 	/* Adjusting down margin for section containers */
@@ -937,10 +952,15 @@ footer h5 {
 		margin-bottom: 32px;
 	}
 	
-	.content-img {
-		margin-bottom: 8px;
+	.content-img-container figcaption {
+		margin-top: 8px;
 	}
 
+	.content-img img {	
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+	
 	/* Adding radius and box shadow */
 	#intro-bg .content-img {
 		padding: 10%;
