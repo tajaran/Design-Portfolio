@@ -230,6 +230,7 @@ footer ul a {
 #cc-bg img,
 #cc-bg-2 img,
 #sdt-bg img,
+#sdt-bg-2 img,
 #ides-bg img,
 #ides-bg-2 img{
 	width: 100%;
@@ -253,7 +254,8 @@ footer ul a {
 
 #gss-bg-2,
 #cc-bg-2,
-#ides-bg-2 {
+#ides-bg-2,
+#sdt-bg-2 {
 	background-color: #EFEFEF; 
 }
 
