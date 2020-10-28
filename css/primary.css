@@ -243,10 +243,6 @@ footer ul a {
 	background-color: #4EA459; 
 }
 
-#sid-bg-2 {
-	background-color: #0F5474; 
-}
-
 /* Green Shirt Studio - Bg Color */
 #gss-bg {
 	background-color: #3A8149; 
@@ -255,7 +251,8 @@ footer ul a {
 #gss-bg-2,
 #cc-bg-2,
 #ides-bg-2,
-#sdt-bg-2 {
+#sdt-bg-2,
+#sid-bg-2{
 	background-color: #EFEFEF; 
 }
 
