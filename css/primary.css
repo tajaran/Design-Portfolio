@@ -154,6 +154,11 @@ figcaption {
 	letter-spacing: 0.025em;
 }
 
+.content figcaption {
+	color: #FF7139;
+
+}
+
 /* HYPERLINK --------------------------------------------------*/
 a {
 	text-decoration: none;
