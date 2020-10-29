@@ -226,7 +226,7 @@ footer ul a {
 }
 
 /* COLOR --------------------------------------------------*/
-/* Adding radius and box shadow */
+/* Adding radius and box shadow 
 #sid-bg img,
 #sid-bg-2 img,
 #gss-bg img,
@@ -236,11 +236,13 @@ footer ul a {
 #sdt-bg img,
 #sdt-bg-2 img,
 #ides-bg img,
-#ides-bg-2 img{
-	width: 100%;
+#ides-bg-2 img,
+#alt-bg img {
+	max-width: 100%;
+	max-height: 100%;
 	border-radius: 4px;	
 	box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* Suicide is Different - Bg Color */
 #sid-bg {
@@ -256,7 +258,8 @@ footer ul a {
 #cc-bg-2,
 #ides-bg-2,
 #sdt-bg-2,
-#sid-bg-2{
+#sid-bg-2,
+#alt-bg {
 	background-color: #EFEFEF; 
 }
 
@@ -281,10 +284,10 @@ footer ul a {
 }
 
 /* PADDING --------------------------------------------------*/ 
-/* Adding radius and box shadow */
+/* Adding radius and box shadow 
 #bg-div .content-img {
 	padding: 80px;
-}
+} 
 
 /* Adding top/bottom padding to 2nd lvl wrapper */
 #three-col-padding {
@@ -440,7 +443,9 @@ main {
 .content-img-container {	
 	display: flex;
 	flex-flow: column nowrap;
+	max-width: 1208px;
 	width: 100%;
+	height: auto;
 	margin-bottom: 64px;
 }
 
@@ -452,15 +457,20 @@ main {
 .content-img {	
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	max-width: 1208px;
 	width: 100%;
+	height: auto;
+	padding: 80px;
 }
 
 .content-img img {	
-	width: 100%;
-	height: auto;
-	margin-left: 32px;
+	max-width: 100%;
+	max-height: 100%;
+	min-width: 0;
+	border-radius: 4px;	
+	box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.4);	margin-left: 32px;
 	margin-right: 32px;
 }
 
