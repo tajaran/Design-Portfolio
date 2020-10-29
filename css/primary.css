@@ -150,6 +150,10 @@ strong > a {
 	font-weight: bold;
 }
 
+figcaption {
+	letter-spacing: 0.025em;
+}
+
 /* HYPERLINK --------------------------------------------------*/
 a {
 	text-decoration: none;
