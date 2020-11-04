@@ -155,13 +155,10 @@ strong > a {
 	font-weight: bold;
 }
 
-figcaption {
-	letter-spacing: 0.025em;
-}
-
-.content figcaption {
+#special-txt {
+	margin-top: 16px;
 	color: #FF7139;
-
+	letter-spacing: 0.025em;
 }
 
 /* HYPERLINK --------------------------------------------------*/
