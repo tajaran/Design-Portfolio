@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <title>Password Protected Page</title>
-    <style>
+  		<title>Strata Decision Technology - Case Study</title>
+	<!-- Favicon: Remember to do multiple sizes later -->
+	<link rel="icon" href="../favicon_32.png">
+		<style>
         html, body {
             margin: 0;
             width: 100%;
             height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Inter, Arial, Helvetica, sans-serif;
         }
         #dialogText {
             padding: 10px 30px;
@@ -25,7 +27,7 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: #EEEEEE;
+            background-color: #EFEFEF;
         }
         
         #dialogWrapCell {
@@ -37,9 +39,9 @@
         #mainDialog {
             max-width: 400px;
             margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
+            border: solid transparent 0;
+            border-radius: 4px;
+						box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.4);
             margin-left: auto;
             margin-right: auto;
             background-color: #FFFFFF;
@@ -53,6 +55,7 @@
         #passArea > * {
             margin: 5px auto;
         }
+			
         #pass {
             width: 100%;
             height: 40px;
@@ -74,16 +77,20 @@
         }
         
         #success {
-            color: green;
+            color: #3A8149;
         }
         
         #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
-            float: right;
+          font-size: 16px;
+					color: #FFFFFF;
+					font-family: Inter, arial, sans-serif;
+					padding: 8px 16px;
+          border-radius: 4px;
+          background-color: #0290EE;
+          border: solid transparent 0;
+          float: right;
         }
+			
         #contentFrame {
             position: absolute;
             top: 0;
